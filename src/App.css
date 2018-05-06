@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Gugi|Raleway:400,700");
+.Head {
+  background: #F2C94C;
+  position: fixed;
+  width: 100vw;
+  padding: 0.7em 0em;
+  z-index: 999; }
+
+.App {
+  text-align: center;
+  overflow: hidden;
+  background: #f2c94c; }
+
+.SingleField {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column; }
+  .SingleField .inputField {
+    height: 45vh;
+    background: url("./bckgrd.svg");
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .SingleField .questionField {
+    background: #f2c94c;
+    font-family: Raleway, monospace;
+    font-size: 1.2em; }
+
+#airport_dep_container input {
+  background: transparent;
+  height: 1.2em;
+  font-size: 5em;
+  margin-bottom: 0.2em;
+  border: none;
+  overflow: visible;
+  outline: none;
+  font-size: 16vw;
+  width: 30vw;
+  font-family: Roboto Mono, monospace;
+  text-transform: uppercase; }
+#airport_dep_container label:after {
+  content: ""; }
+#airport_dep_container .airport_dep_location {
+  margin: 0;
+  font-family: Raleway, sans-serif; }
+  #airport_dep_container .airport_dep_location:before {
+    content: "";
+    width: 30vw;
+    left: 35vw;
+    height: 1px;
+    background: linear-gradient(to right, #ccc 0%, #ccc 32%, #fff 32.1%, #fff 34%, #ccc 34.1%, #ccc 65%, #fff 65.1%, #fff 67%, #ccc 67.1%, #ccc 100%);
+    position: absolute;
+    margin-top: -1em; }
+
+#airport_arr_container .inputField {
+  background-position-x: -200vw; }
+#airport_arr_container input {
+  background: transparent;
+  height: 1.2em;
+  font-size: 5em;
+  margin-bottom: 0.2em;
+  border: none;
+  overflow: visible;
+  outline: none;
+  font-size: 16vw;
+  width: 30vw;
+  font-family: Roboto Mono, monospace;
+  text-transform: uppercase; }
+#airport_arr_container label:after {
+  content: ""; }
+#airport_arr_container .airport_arr_location {
+  margin: 0;
+  font-family: Raleway, sans-serif; }
+  #airport_arr_container .airport_arr_location:before {
+    content: "";
+    width: 30vw;
+    left: 35vw;
+    height: 1px;
+    background: linear-gradient(to right, #ccc 0%, #ccc 32%, #fff 32.1%, #fff 34%, #ccc 34.1%, #ccc 65%, #fff 65.1%, #fff 67%, #ccc 67.1%, #ccc 100%);
+    position: absolute;
+    margin-top: -1em; }
+
+#airline_container .inputField {
+  background-position-x: -100vw; }
+#airline_container input {
+  border: 1px solid transparent;
+  line-height: 2em;
+  font-size: 2em;
+  font-family: Raleway, sans-serif;
+  margin-bottom: 3em;
+  outline: none;
+  width: 55vw;
+  text-align: center; }
+  #airline_container input:focus {
+    border: 1px dashed #ccc; }
+#airline_container .airline_suggest {
+  position: absolute;
+  border: 1px solid transparent;
+  line-height: 2em;
+  font-size: 2em;
+  font-family: Roboto Mono, monospace;
+  outline: none;
+  text-align: left;
+  width: 55vw;
+  margin-top: -2em;
+  color: #222;
+  pointer-events: none; }
+
+.airline_type {
+  line-height: 2em;
+  background: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  width: 55vw;
+  margin-top: -1.5em;
+  font-size: 2em;
+  font-family: Raleway, sans-serif;
+  pointer-events: none;
+  display: inline-block; }
+  .airline_type .visible {
+    color: #222; }
+  .airline_type .hidden {
+    color: #ccc; }
+
+.query-container {
+  display: flex; }
+
+.response {
+  position: absolute;
+  top: 0;
+  background: #f2c94c;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #222;
+  opacity: 0;
+  pointer-events: none;
+  justify-content: center;
+  flex-direction: column; }
+  .response .theResult {
+    font-size: 3em;
+    font-family: Gugi, Raleway, sans-serif; }
+  .response .resultDescr {
+    font-family: Raleway, monospace;
+    font-size: 1.5em; }
+  .response .howtho {
+    font-family: Raleway, monospace;
+    font-size: 1.2em;
+    margin-top: 20vh;
+    pointer-events: all;
+    border: 0;
+    background: transparent; }
+
+.submitBtn {
+  margin: 10vw;
+  padding: 0.7em;
+  background: #222;
+  border: 0px;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  border-radius: 10px; }
+
+#day_container .inputField {
+  background: #fff;
+  height: 80vh; }
+#day_container .question {
+  font-family: Raleway, monospace;
+  font-size: 1.2em; }
+
+.model {
+  position: absolute;
+  top: 0;
+  background: url(/static/media/model.b9d1bc71.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #222;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none; }
+
+.slide-enter {
+  transform: translateX(100%); }
+
+.slide-enter.slide-enter-active {
+  transform: translateX(0%);
+  transition: transform 1000ms ease-in-out; }
+
+.slide-leave {
+  transform: translate(0%, -100%); }
+
+.slide-leave.slide-leave-active {
+  transform: translate(-100%, -100%);
+  transition: transform 1000ms ease-in-out; }
+
+@keyframes showResponse {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.response-enter {
+  animation-name: showResponse;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards; }
+
+.response-enter-done {
+  opacity: 1; }
+
+.response-exit {
+  animation-name: showResponse;
+  animation-direction: reverse;
+  animation-duration: 0.3s; }
+
+.model-enter {
+  animation-name: showResponse;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards; }
+
+.model-enter-done {
+  opacity: 1; }
+
+.model-exit {
+  animation-name: showResponse;
+  animation-direction: reverse;
+  animation-duration: 0.3s; }
+
+/*# sourceMappingURL=App.css.map */
