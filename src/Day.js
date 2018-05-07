@@ -77,7 +77,7 @@ class Day extends Component {
             textAlign: 'center',
             fontFamily: 'Raleway, sans-serif',
             fontSize: '1.7em',
-            width: '70vw',
+            width: '90vw',
           }
         },
         MuiTypography: {
